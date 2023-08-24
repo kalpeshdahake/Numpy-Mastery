@@ -69,11 +69,77 @@ After reading this section, you should be able to:
 
 Whether you're new to NumPy or seeking to enhance your understanding, this section will provide valuable insights into array manipulation and its fundamental properties.
 
-Feel free to explore and learn more about n-dimensional arrays and their applications in NumPy!
-
----
-
 *Note: This section provides an overview of n-dimensional arrays in NumPy, aiming to help readers understand their representation and manipulation. Adjust your learning based on your comfort level and interests.*
+
+
+# NumPy Basics
+
+Welcome to the NumPy Basics repository! This repository provides an introduction to the fundamental concepts of NumPy, a powerful Python library for numerical computations involving multi-dimensional arrays or matrices.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Array Basics](#array-basics)
+- [Attributes of ndarray](#attributes-of-ndarray)
+
+## Introduction
+
+NumPy's primary object is the homogeneous multidimensional array. It's essentially a table of elements, often numbers, all of the same type, and indexed by a tuple of non-negative integers. In NumPy, these dimensions are referred to as axes.
+
+## Array Basics
+
+For instance, consider an array representing the coordinates of a point in 3D space: `[1, 2, 1]`. This array has one axis, and that axis contains 3 elements, giving it a length of 3. In a more complex example below, the array has 2 axes. The first axis has a length of 2, and the second axis has a length of 3.
+
+[[1., 0., 0.],
+[0., 1., 2.]]
+
+
+NumPy provides a class for arrays called `ndarray`, also known by the alias `array`. It's important to note that `numpy.array` is distinct from the Standard Python Library's `array.array`, which handles one-dimensional arrays and offers less functionality.
+
+## Attributes of ndarray
+
+Key attributes of an `ndarray` object include:
+
+- `ndarray.ndim`: The number of axes (dimensions) of the array.
+- `ndarray.shape`: The dimensions of the array, expressed as a tuple of integers indicating the size along each dimension. For example, a matrix with `n` rows and `m` columns has a shape of `(n, m)`.
+- `ndarray.size`: The total number of elements in the array, calculated as the product of the dimensions specified in the `shape` tuple.
+- `ndarray.dtype`: Describes the data type of the elements in the array. You can use standard Python types or specialized NumPy types like `numpy.int32`, `numpy.float64`, etc.
+- `ndarray.itemsize`: The size in bytes of each element in the array. For instance, an array of elements of type `float64` has an item size of 8 bytes.
+- `ndarray.data`: The buffer containing the actual elements of the array. You'll usually access elements using indexing rather than this attribute.
+
+# An Example
+
+Welcome to the NumPy Example section! In this section, we'll walk through a simple example to demonstrate the usage of NumPy arrays.
+
+```python
+import numpy as np
+
+# Create a 2D array with values from 0 to 14, reshaped to 3 rows and 5 columns
+a = np.arange(15).reshape(3, 5)
+
+print("Array a:")
+print(a)
+# Output:
+# array([[ 0,  1,  2,  3,  4],
+#        [ 5,  6,  7,  8,  9],
+#        [10, 11, 12, 13, 14]])
+
+print("Shape of a:", a.shape)  # Output: (3, 5)
+print("Number of dimensions in a:", a.ndim)  # Output: 2
+print("Data type of elements in a:", a.dtype.name)  # Output: 'int64'
+print("Size of each element in bytes:", a.itemsize)  # Output: 8
+print("Total number of elements in a:", a.size)  # Output: 15
+print("Type of array a:", type(a))  # Output: <class 'numpy.ndarray'>
+
+# Create a 1D array using the np.array function
+b = np.array([6, 7, 8])
+
+print("\nArray b:")
+print(b)
+# Output: array([6, 7, 8])
+
+print("Type of array b:", type(b))  # Output: <class 'numpy.ndarray'>
+
+
 
 
 For detailed documentation and tutorials, visit the [NumPy official website](https://numpy.org/).
