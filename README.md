@@ -55,7 +55,25 @@ If you're using pip, you can install NumPy using the following command:
 
 For a more reproducible setup, consider using virtual environments. Refer to the "Reproducible Installs" section below for details.
 
+# Learner Profile
 
+Welcome to the "Learner Profile" section! This is a quick overview of arrays in NumPy. It demonstrates how n-dimensional arrays are represented and can be manipulated. If you're looking to understand how to apply common functions to n-dimensional arrays without using for-loops, or if you want to grasp the concepts of axis and shape properties for n-dimensional arrays, this article might be of great help to you.
+
+## Learning Objectives
+
+After reading this section, you should be able to:
+
+- Understand the difference between one-, two-, and n-dimensional arrays in NumPy.
+- Apply some linear algebra operations to n-dimensional arrays without resorting to for-loops.
+- Grasp the concepts of axis and shape properties for n-dimensional arrays.
+
+Whether you're new to NumPy or seeking to enhance your understanding, this section will provide valuable insights into array manipulation and its fundamental properties.
+
+Feel free to explore and learn more about n-dimensional arrays and their applications in NumPy!
+
+---
+
+*Note: This section provides an overview of n-dimensional arrays in NumPy, aiming to help readers understand their representation and manipulation. Adjust your learning based on your comfort level and interests.*
 
 
 For detailed documentation and tutorials, visit the [NumPy official website](https://numpy.org/).
