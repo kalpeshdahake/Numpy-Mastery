@@ -1,9 +1,5 @@
 # Numpy-Mastery
 
-<p align="center">
-  <img src="numpy_logo.png" alt="NumPy Logo" width="300"/>
-</p>
-
 # NumPy: The Fundamental Package for Scientific Computing in Python
 
 NumPy is a fundamental package for scientific computing in Python. It is a powerful library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and a wide range of routines for fast operations on arrays. These operations include mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation, and much more.
