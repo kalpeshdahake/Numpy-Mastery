@@ -30,6 +30,4 @@ NumPy's array dialect and the `ndarray` class have become the de-facto standard 
 
 For detailed documentation and tutorials, visit the [NumPy official website](https://numpy.org/).
 
----
 
-*Logo Credits: NumPy logo is a registered trademark of the NumPy project.*
